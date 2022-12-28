@@ -1,0 +1,11 @@
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none !important;
+  color: inherit;
+}
+body {
+  background-color: black;
+  color: white;
+}
