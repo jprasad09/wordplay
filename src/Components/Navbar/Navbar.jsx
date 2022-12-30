@@ -1,5 +1,8 @@
 import React from "react";
+import Home from "../Home/Home";
 import "../Navbar/Navbar.css";
+import { Link } from "react-router-dom";
+import Login from "../Login/Login";
 
 const Navbar = () => {
   return (
@@ -7,45 +10,38 @@ const Navbar = () => {
       <header className="navbar">
         <div className="heading">
           <h2>
-            <a href="">Wordplay</a>
+            <Link to="/">Wordplay</Link>
           </h2>
         </div>
         <nav>
           <ul className="nav_links">
             <li>
-              <a href="">
+              <Link to="/">
                 <span>Home</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="">
-                <span>Game</span>
-              </a>
+              <span>Game</span>
             </li>
             <li>
-              <a href="">
-                <span>Rules</span>
-              </a>
+              <span>Rules</span>
             </li>
             <li>
-              <a href="">
-                <span>Help</span>
-              </a>
+              <span>Help</span>
             </li>
             <li>
-              <a href="">
-                <span>Contact</span>
-              </a>
+              <span>Contact</span>
             </li>
           </ul>
         </nav>
         <div className="buttons">
-          <button className="btn1">
-            <a href="">Register</a>
-          </button>
-          <button className="btn2">
-            <a href="">Log in</a>
-          </button>
+          <Link to="/Register">
+            <button className="btn1">Register</button>
+          </Link>
+
+          <Link to="/Login">
+            <button className="btn2">Login</button>
+          </Link>
         </div>
       </header>
     </>

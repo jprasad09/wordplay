@@ -1,5 +1,6 @@
 import React from "react";
-import HomePage from "./Components/Pages/HomePage";
+import HomePage from "./Pages/HomePage";
+import Router from "./Router";
 
 // window.addEventListener(
 //   "contextmenu",
@@ -12,6 +13,7 @@ const App = () => {
   return (
     <>
       <HomePage />
+      <Router />
     </>
   );
 };
