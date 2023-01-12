@@ -1,6 +1,9 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
 import HomePage from "./Pages/HomePage";
-import Router from "./Router";
+import LoginPage from "./Pages/LoginPage";
+import RegisterPage from "./Pages/RegisterPage";
+
 
 // window.addEventListener(
 //   "contextmenu",
@@ -12,8 +15,11 @@ import Router from "./Router";
 const App = () => {
   return (
     <>
-      <HomePage />
-      <Router />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/Register" element={<RegisterPage />} />
+        <Route path="/Login" element={<LoginPage />} />
+      </Routes>
     </>
   );
 };
